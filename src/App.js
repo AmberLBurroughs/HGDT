@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 // import ReactDOM from 'react-dom';
-import logo from './logo.svg';
 import Accordions from './Components/Accordion';
 import Button from './Components/Buttons';
 import './App.css';
