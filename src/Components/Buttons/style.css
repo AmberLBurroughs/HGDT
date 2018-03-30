@@ -1,0 +1,18 @@
+.btn { 	
+	background-color: #0f1b2f;
+  color: #fff;
+  padding: 12px 0;
+  width: 100%;
+  border-radius: 8px;
+  font-size: 18px;
+  margin: 20px 0;
+  font-weight: 300;
+  text-transform: uppercase;
+	font-family: 'Quicksand', sans-serif;
+}
+.btn:hover {
+	background-color: #10264b;
+}
+.btn:focus {
+    outline: none;
+}

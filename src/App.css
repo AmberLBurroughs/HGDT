@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+  background: url("/img/subtle_dots.png")repeat;
+  font-weight: 300;
+  overflow-x:hidden;
+}
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: animate .60s;
+  height: 80px;
+}
+@keyframes animate {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.App-header {
+  color: #0F1B2F;
+}
+.topHero {
+  background-color: #fff;
+  height: 160px;
+  z-index: 0;
+}
+#rotate {
+    z-index: 1;
+    margin-top: -140px;
+    background-color: #fff;
+    -ms-transform: rotate(-12deg); /* IE 9 */
+    -webkit-transform: rotate(-12deg); /* Safari */
+    transform: rotate(-12deg); /* Standard syntax */
+    position: relative;
+    margin-left:-60px;
+    min-width: 1400px;
+}
+.App-header-wrap {
+  padding: 20px;
+  margin-bottom: 64px;
+   -ms-transform: rotate(12deg); /* IE 9 */
+    -webkit-transform: rotate(12deg); /* Safari */
+    transform: rotate(12deg); /* Standard syntax */
+}
+.bOuter {
+  border-bottom: 1px solid #FF3E2F;
+  width: 55%;
+}
+.bInner {
+  border-bottom: 1px solid #FF3E2F;
+  width: 75%;
+  margin-bottom: 12px;
+}
+.App-title {
+  font-size: 2.5em;
+  font-weight: 300;
+  margin: 0 0 12px;
+}
+
+.App-header p {
+  margin: 0;
+  line-height: 1.9;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.App-intro {
+  font-size: large;
+}
+.content-wrap {
+  width: 30%;
+  float: right;
+  margin: 0 5%;
+}
+
+
+@media only screen and (max-width: 40em) {
+  body {
+    overflow-x:hidden !important;
+  }
+  .App-title {
+    font-size: 2em;
+  }
+  .content-wrap{
+    margin-top: 10%;
+    width: 90%;
+
+  }
+  #rotate {
+    z-index: 1;
+    margin-top: -140px;
+    background-color: #fff;
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    position: relative;
+    margin-left: 0px;
+    min-width: 300px;
+}
+  .App-header-wrap {
+    padding: 20px;
+    margin-bottom: 64px;
+    -ms-transform: rotate(0deg);
+     -webkit-transform: rotate(0deg); 
+     transform: rotate(0deg); 
+}
+
+ } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+ #rotate {
+    min-width: 300px;
+  }
+  .content-wrap{
+    margin-top: 2%;
+    width: 40%;
+
+  }
+
+ } /* min-width 641px, medium screens */
+
+
+/*@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}*/
