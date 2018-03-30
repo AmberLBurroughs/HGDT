@@ -34,7 +34,7 @@ class Accordions extends Component {
 		        <AccordionItemBody>
 		          <div>
 			          <p>New York</p>
-			          <a href="https://goo.gl/maps/iXaebnQaXVR2" target="_blank" className="locate">
+			          <a href="https://goo.gl/maps/iXaebnQaXVR2" target="_blank" className="locate" rel="noopener noreferrer">
 									10 Hudson Yards<br/>
 									Floor 22<br/>
 									New York, NY 10001<br/>
@@ -43,7 +43,7 @@ class Accordions extends Component {
 							<hr/>
 		          <div>
 		           	<p>Shanghai</p>
-		          	<a href="https://goo.gl/maps/T4wj4G4UMrm" target="_blank" className="locate">
+		          	<a href="https://goo.gl/maps/T4wj4G4UMrm" target="_blank" className="locate" rel="noopener noreferrer">
 									111 Pudong S Rd, Pudong Xinqu<br/>
 									Floor 5<br/>
 									Shanghai Shi, China, 200120<br/>
