@@ -8,7 +8,6 @@ const path = require('path');
  *
  */
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 /*
  * We've enabled ExtractTextPlugin for you. This allows your app to
  * use css modules that will be moved into a seperate CSS file instead of inside
@@ -18,9 +17,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
  *
  */
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-
-const CleanWebpackPlugin = require('clean-webpack-plugin');
-
 module.exports = {
   entry: './src/index.js',
   output: {
@@ -48,7 +44,8 @@ module: {
       }
     ]
   },
-plugins: [new UglifyJSPlugin({sourceMap: true}), new ExtractTextPlugin('styles.css'), new HtmlWebpackPlugin({
-  template: path.join(__dirname, 'public', 'index.html'), new CleanWebpackPlugin(['dist'])
-})]
+  plugins: [
+    new UglifyJSPlugin(), 
+    new ExtractTextPlugin('styles.css')  
+  ]
 };
